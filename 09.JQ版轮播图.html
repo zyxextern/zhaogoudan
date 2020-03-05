@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQ轮播图</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .container{
+            width: 590px;
+            height: 470px;
+            border:1px solid black;
+            margin:20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        ul{
+            list-style-type: none;
+            width: 2950px;
+        }
+        li{
+            float:left;
+        }
+        .btn_box{
+            position:absolute;
+            top:200px;
+            display:flex;
+            justify-content: space-between;
+            width:590px;
+        }
+        .left,.right{
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0,0,0,0.5);
+            color:#fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+        }
+        .pointer-box{
+            width: 200px;
+            height: 20px;
+            position: absolute;
+            bottom:20px;
+            left:0;
+            right:0;
+            margin:auto;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+        .pointer{
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255,255,255,0.5);
+            border-radius: 50%;
+            border:2px solid #fff;
+            box-sizing: border-box;
+        }
+        .active{
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><img src="./images/1.jpg" alt=""></li>
+            <li><img src="./images/2.jpg" alt=""></li>
+            <li><img src="./images/3.jpg" alt=""></li>
+            <li><img src="./images/4.jpg" alt=""></li>
+            <li><img src="./images/5.jpg" alt=""></li>
+        </ul>
+        <div class="btn_box">
+            <div class="left">&lt;</div>
+            <div class="right">&gt;</div>
+        </div>
+        <div class="pointer-box">
+            <div class="pointer active"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+            <div class="pointer"></div>
+        </div>
+    </div>
+</body>
+<script src="./js/jquery-1.11.1.js"></script>
+<script>
+// 控制pointer显示的索引
+let index = 0;
+$('.right').click(function(){
+    $('ul').stop(true,true).animate({"marginLeft":"-590px"},500,()=>{
+        $('li').first().appendTo( $('ul') )
+        $('ul').css("marginLeft","0px")
+        index++;
+        if( index > 4 ){
+            index = 0
+        }
+        $('.pointer').eq(index).addClass('active').siblings().removeClass('active');
+    })
+})
+$('.left').click(()=>{
+    $('li').last().prependTo( $('ul') )
+    $('ul').css("marginLeft","-590px")
+    $('ul').stop(true,false).animate({"marginLeft":"0px"},500,function(){
+        index--;
+        if( index<0 ){
+            index = 4
+        }
+        $('.pointer').eq(index).addClass('active').siblings().removeClass('active');
+    })
+})
+</script>
+</html>
