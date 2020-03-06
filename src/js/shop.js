@@ -28,10 +28,9 @@ date_four.forEach(item => {
 });
 $('#show').html(str);
 var index = 0;
-$('.show_a').mouseover(function(){
-    index = $(this).attr("index");
-    console.log(index);
-    
+$('.show_a').click(function(){
+    // 将被点击的元素的index传入localstorage，方便其他页面调用
+    index = localStorage.setItem("index",$(this).attr("index")); 
 })
 
 var cpage = 1;

@@ -1,0 +1,114 @@
+html{
+    font-size: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main_box{
+    width: 100%;
+    height: 100%;
+    background-color: #576069;
+    position: relative;
+}
+/* 导航栏 */
+#main_box>.nav{
+    position: absolute;
+    top: 0;
+    left: -200px;
+    /* margin-left: -200px; */
+    transition: left 0.8s linear,background-color 2s linear;
+}
+#main_box>.nav,#main_box>.nav>.sidebar{
+    height: 100%;
+    float: left;
+    width: 200px;
+    /* background-color: rgba(0,0,0,.2); */
+
+}
+#main_box>.right_run{
+    /* transform: translateX(200px); */
+    left: 0px;
+    background-color: rgba(0,0,0,0.8);
+}
+.scroe{
+    transform: rotate(450deg);
+}
+/* .left_run{
+    transform: translateX(-200px);
+} */
+/* 头像 */
+#main_box>.nav>.sidebar>.human{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+#main_box>.nav>.sidebar>.human>.human_logo{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin: 10px auto 10px;
+    background-color: #333;
+}
+#main_box>.nav>.sidebar>.human>a{
+    color: #ccc;
+    display: block;
+    text-align: center;
+}
+/* 主体导航栏 */
+/* #main_box>.nav>.sidebar>.option>ul{
+
+}
+#main_box>.nav>.sidebar>.option>ul>li{
+
+} */
+#main_box>.nav>.sidebar>.option>ul>li>a{
+    color: #ccc;
+    font: 16px/60px "";
+    display: block;
+    text-align: center;
+    margin: 0 15px;
+    border-bottom: 1px solid rgb(230, 229, 229);
+    box-sizing: border-box;
+}
+#main_box>.nav>.sidebar>.option>ul>li:hover{
+    background-color: rgb(230, 229, 229);
+}
+#main_box>.nav>.sidebar>.option>ul>li>a:hover{
+
+    color: black;
+    text-decoration:none;
+    font-weight: 700;
+}
+/* 导航栏的button按钮 */
+#main_box>.nav>button{
+    float: left;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url(../imgs/button.png) no-repeat 100%;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0 0 10px;
+    transition: all 0.8s linear;
+}
+/* logo */
+/* logo */
+#main_box>.container{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    /* overflow: hidden; */
+}
+#main_box>.container>.head>.logo{
+    padding: 10px 0 10px 10px;
+    border-bottom: 2px solid #ccc;
+}
+#main_box>.container>.head>.logo>a>img{
+    width: 176px;
+    height: 44px;
+}
+
