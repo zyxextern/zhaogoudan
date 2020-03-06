@@ -11,20 +11,82 @@ html,body{
     background-color: rgba(46, 57, 68, 0.8);
     position: relative;
 }
+/* 轮播图 */
+/* #main_box>.container>.banner,#main_box>.container>.banner>ul>li{
+    position: absolute; 
 
-#main_box>.container>.banner,#main_box>.container>.banner>ul>li{
-    /* position: absolute; */
-
-}
+} */
 #main_box>.container>.banner{
     margin: 0 40px;
+    overflow: hidden;
 }
 #main_box>.container>.banner>ul{
     margin-top: 20px;
-    width: 1200%;
+    /* width: 2120px; */
+    
 }
 #main_box>.container>.banner>ul>li{
     float: left;
+    border: 2px solid #ccc;
+    width: 1060px;
+}
+#main_box>.container>.banner>ul>li>div{
+    float: left;
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.info{
+    font: 28px/40px "";
+    color: rgb(226, 224, 224);
+    padding: 5px 20px 5px 20px;
+    word-wrap:break-word;
+    width: 430px;
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.right_img{
+    /* float: left; */
+    /* display: inline-block; */
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap;
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.right_img>div{
+    margin-left: 20px;
+    margin-top: 20px;
+    opacity: .8;
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.right_img>div:hover{
+    opacity: 1;
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.right_img>div{
+    background-size: cover;
+    background-position: center center;
+    width: 162px;
+    height: 69px;
+
+}
+#main_box>.container>.banner>ul>li>div.banner_right>.right_text{
+    color: rgb(226, 224, 224);
+    font: 20px/20px "";
+    margin: 20px 0 0 20px;
+}
+/* 按钮 */
+.btn_box{
+    position:absolute;
+    top:210px;
+    display:flex;
+    justify-content: space-between;
+    width:1170px;
+    left: 0;
+}
+.left,.right{
+    width: 55px;
+    height: 80px;
+    color:#fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.left:hover,.right:hover{
+    background: rgba(0, 0, 0);
 }
 /* logo */
 #main_box>.container{
