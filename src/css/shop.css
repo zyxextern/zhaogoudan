@@ -111,3 +111,58 @@ html,body{
     width: 176px;
     height: 44px;
 }
+
+
+/* 商品 */
+#main_box>.container>.show>a{
+    display: block;
+    margin-top: 20px;   
+    margin-bottom: 20px; 
+}
+#main_box>.container>.show>a>div:nth-of-type(1){
+    float: left;
+}
+#main_box>.container>.show>a>div:nth-of-type(2){
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+#main_box>.container>.show>a>div:nth-of-type(2)>p:nth-of-type(1){
+    font: 20px/20px "";
+    color: #ccc;
+    /* text-align: right; */
+}
+#main_box>.container>.show>a>div:nth-of-type(2)>p:nth-of-type(2){
+    font: 16px/20px "";
+    color: #ccc;
+    /* text-align: right; */
+}
+#main_box>.container>.show>a>.sale{
+    float: right;
+    margin-top: 5px;
+}
+#main_box>.container>.show>a>.sale>p{
+    font: 16px/20px "";
+    color: #ccc;
+}
+#main_box>.container>.show>a:hover{
+    background-color: #b2d5e9;
+}
+#main_box>.container>.show>#show_a:hover p {
+    color: black;
+}
+
+
+/* 分页按钮 */
+#pager{
+    position: absolute;
+    left: 50%;
+}
+button{
+    border: 0;
+    margin: 5px 0 5px 5px;
+}
+button.active {
+    background-color:rgba(0,0,0,.7);
+    color: white;
+}
