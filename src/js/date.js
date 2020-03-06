@@ -40,3 +40,56 @@ let date = [
         small_4:"https://media.st.dl.eccdnx.com/steam/apps/578080/ss_5fe3d8ce7e90442569fc676e2315fffdf81dd1a5.600x338.jpg"
     }
 ]
+
+
+let date_two = [
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/589290/capsule_184x69.jpg?t=1583428341',
+        name:'Holdfast: Nations At War'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/893850/capsule_184x69_schinese.jpg?t=1583447305',
+        name:'THE LONGING'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/1202540/capsule_184x69_schinese.jpg?t=1583229791',
+        name:'丸子与銀河龙'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/1233270/capsule_184x69_schinese.jpg?t=1582850836',
+        name:'一生推不如一生恋'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/1133590/capsule_184x69.jpg?t=1583489212',
+        name:'Stilt Fella'
+    },
+]
+
+let date_three = [
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/485510/capsule_184x69.jpg?t=1570687109',
+        name:'Nioh: Complete Edition / 仁王 Complete Edition'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/578080/capsule_184x69.jpg?t=1581036302',
+        name:"PLAYERUNKNOWN'S BATTLEGROUNDS"
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/242760/capsule_184x69.jpg?t=1568768340',
+        name:'The Forest'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/278080/capsule_184x69.jpg?t=1569989801',
+        name:'真・三国无双７ with 猛将传'
+    },
+    {
+        img:'https://media.st.dl.eccdnx.com/steam/apps/346110/capsule_184x69.jpg?t=1583178772',
+        name:'ARK: Survival Evolved'
+    },
+]
+
+
+
+
+
+

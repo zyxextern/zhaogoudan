@@ -1,0 +1,1 @@
+"use strict";$("#btn").click(function(){$(".nav").is($(".right_run"))?($(".nav").removeClass("right_run"),$("#btn").removeClass("scroe")):($(".nav").addClass("right_run"),$("#btn").addClass("scroe"))});

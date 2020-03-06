@@ -69,10 +69,7 @@ const gulp = require('gulp');
             //     proxies:[
             //         {
             //             source:'/gx',// 源，代理标识符
-            //             target:'' //你要代理的地址
-            //         },
-            //         {
-            //             // 可以很多代理
+            //             target:'https://store.steampowered.com/search/results/' //你要代理的地址
             //         }
             // ]
             }))

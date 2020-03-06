@@ -8,7 +8,7 @@ html,body{
 #main_box{
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 57, 68, 0.8);
+    background-color: #576069;
     position: relative;
 }
 /* 轮播图 */
@@ -19,6 +19,7 @@ html,body{
 #main_box>.container>.banner{
     margin: 0 40px;
     overflow: hidden;
+    padding-bottom: 45px;
 }
 #main_box>.container>.banner>ul{
     margin-top: 20px;
@@ -88,13 +89,31 @@ html,body{
 .left:hover,.right:hover{
     background: rgba(0, 0, 0);
 }
+/* 下面圆点 */
+.banner>.pointer_box{
+    height: 8px;
+    position: absolute;
+    right: 100px;
+    top: 420px;
+    
+}
+.banner>.pointer_box>.pointer{
+    width: 30px;
+    height: 8px;
+    border: 1px solid #ccc;
+    float: left;
+    margin-left: 5px;
+}
+.active{
+    background-color: white;
+}
 /* logo */
 #main_box>.container{
     position: relative;
     top: 0;
     left: 0;
     background-color: rgba(0,0,0,.7);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #main_box>.container>.head>.logo{
     padding: 10px 0 10px 10px;
@@ -112,18 +131,19 @@ html,body{
     top: 0;
     left: -200px;
     /* margin-left: -200px; */
-    transition: all 0.8s linear;
+    transition: left 0.8s linear,background-color 2s linear;
 }
 #main_box>.nav,#main_box>.nav>.sidebar{
     height: 100%;
     float: left;
     width: 200px;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,.2); */
 
 }
 #main_box>.right_run{
     /* transform: translateX(200px); */
     left: 0px;
+    background-color: rgba(0,0,0,0.8);
 }
 .scroe{
     transform: rotate(450deg);
@@ -189,19 +209,72 @@ html,body{
     transition: all 0.8s linear;
 }
 
+/* tab选项卡 */
+#main_box>div:nth-of-type(2){
+    background-color: #576069;
+    padding: 0;
+}
+#main_box>.container>.tab_out{
+    left: 0px;
+    top: 510px;
+}
+#main_box>.container>.tab_out>.tab_box>.title-box{
+    /* display: inline-block; */
+    background-color: rgba(0,0,0,.7);
+}
+#main_box>.container>.tab_out>.tab_box>.title-box>div{
+    float: left;
+    font: 16px/30px "";
+    color: #576069;
+    padding: 0 10px;
+    cursor: pointer;
+}
 
+#main_box>.container>.tab_out>.tab_box>.title-box>.title_active{
+    background-color: #576069;
+    color: white;
+}
 
+#main_box>.container>.tab_out>.tab_box>.content-box>.content{
+    display: none;
+    width: 100%;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content_show{
+    display: block;
+}
 
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a{
+    display: block;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,.7);
+}
 
-
-
-
-
-
-
-
-
-
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a>div:nth-of-type(1){
+    float: left;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a>div:nth-of-type(2){
+    float: right;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a>.contenttext{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a p:nth-of-type(1){
+    font: 20px/20px "";
+    color: #ccc;
+    text-align: right;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a p:nth-of-type(2){
+    font: 16px/20px "";
+    color: #ccc;
+    text-align: right;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a:hover{
+    background-color: #b2d5e9;
+}
+#main_box>.container>.tab_out>.tab_box>.content-box>.content>a:hover p{
+    color: black;
+}
 
 
 
